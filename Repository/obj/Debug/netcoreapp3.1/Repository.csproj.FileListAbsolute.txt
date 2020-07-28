@@ -1,0 +1,12 @@
+C:\Projetos\Desenvolvimento_Web_Mvc\Camadas_Sample\CamadaSample\Repository\bin\Debug\netcoreapp3.1\Repository.deps.json
+C:\Projetos\Desenvolvimento_Web_Mvc\Camadas_Sample\CamadaSample\Repository\bin\Debug\netcoreapp3.1\Repository.dll
+C:\Projetos\Desenvolvimento_Web_Mvc\Camadas_Sample\CamadaSample\Repository\bin\Debug\netcoreapp3.1\Repository.pdb
+C:\Projetos\Desenvolvimento_Web_Mvc\Camadas_Sample\CamadaSample\Repository\bin\Debug\netcoreapp3.1\Domain.dll
+C:\Projetos\Desenvolvimento_Web_Mvc\Camadas_Sample\CamadaSample\Repository\bin\Debug\netcoreapp3.1\Domain.pdb
+C:\Projetos\Desenvolvimento_Web_Mvc\Camadas_Sample\CamadaSample\Repository\obj\Debug\netcoreapp3.1\Repository.csprojAssemblyReference.cache
+C:\Projetos\Desenvolvimento_Web_Mvc\Camadas_Sample\CamadaSample\Repository\obj\Debug\netcoreapp3.1\Repository.AssemblyInfoInputs.cache
+C:\Projetos\Desenvolvimento_Web_Mvc\Camadas_Sample\CamadaSample\Repository\obj\Debug\netcoreapp3.1\Repository.AssemblyInfo.cs
+C:\Projetos\Desenvolvimento_Web_Mvc\Camadas_Sample\CamadaSample\Repository\obj\Debug\netcoreapp3.1\Repository.csproj.CopyComplete
+C:\Projetos\Desenvolvimento_Web_Mvc\Camadas_Sample\CamadaSample\Repository\obj\Debug\netcoreapp3.1\Repository.dll
+C:\Projetos\Desenvolvimento_Web_Mvc\Camadas_Sample\CamadaSample\Repository\obj\Debug\netcoreapp3.1\Repository.pdb
+C:\Projetos\Desenvolvimento_Web_Mvc\Camadas_Sample\CamadaSample\Repository\obj\Debug\netcoreapp3.1\Repository.csproj.CoreCompileInputs.cache
