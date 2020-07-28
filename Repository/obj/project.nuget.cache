@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "jiEqmi302uc6+C74NGP5wVsvRm8i+qafmfdwJyvCHeKoIC00tOvGjy8CVxEmY7o4Avckf0Yn+TwrKyfXBXbKUQ==",
+  "dgSpecHash": "TF0+lgoX/o1C5AilAT91bqiN9INVdoEEpAIOupZ3JiMlolyWLEccgWN57YCt3q9TfZArMqDk87f8cldwvy3LFA==",
   "success": true,
   "projectFilePath": "C:\\Projetos\\Desenvolvimento_Web_Mvc\\Camadas_Sample\\CamadaSample\\Repository\\Repository.csproj",
   "expectedPackageFiles": [
@@ -23,7 +23,10 @@
     "C:\\Users\\rafae\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\3.1.6\\microsoft.extensions.dependencyinjection.abstractions.3.1.6.nupkg.sha512",
     "C:\\Users\\rafae\\.nuget\\packages\\microsoft.extensions.logging\\3.1.6\\microsoft.extensions.logging.3.1.6.nupkg.sha512",
     "C:\\Users\\rafae\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\3.1.6\\microsoft.extensions.logging.abstractions.3.1.6.nupkg.sha512",
+    "C:\\Users\\rafae\\.nuget\\packages\\microsoft.extensions.logging.configuration\\3.1.6\\microsoft.extensions.logging.configuration.3.1.6.nupkg.sha512",
+    "C:\\Users\\rafae\\.nuget\\packages\\microsoft.extensions.logging.console\\3.1.6\\microsoft.extensions.logging.console.3.1.6.nupkg.sha512",
     "C:\\Users\\rafae\\.nuget\\packages\\microsoft.extensions.options\\3.1.6\\microsoft.extensions.options.3.1.6.nupkg.sha512",
+    "C:\\Users\\rafae\\.nuget\\packages\\microsoft.extensions.options.configurationextensions\\3.1.6\\microsoft.extensions.options.configurationextensions.3.1.6.nupkg.sha512",
     "C:\\Users\\rafae\\.nuget\\packages\\microsoft.extensions.primitives\\3.1.6\\microsoft.extensions.primitives.3.1.6.nupkg.sha512",
     "C:\\Users\\rafae\\.nuget\\packages\\microsoft.identity.client\\3.0.8\\microsoft.identity.client.3.0.8.nupkg.sha512",
     "C:\\Users\\rafae\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
