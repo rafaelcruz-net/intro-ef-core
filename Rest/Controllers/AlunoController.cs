@@ -55,5 +55,11 @@ namespace Rest.Controllers
         {
             this.Services.Delete(id);
         }
+
+        [HttpPut("{id}")]
+        public void Put(Guid id, [FromBody] Aluno model)
+        {
+            this.Services.Update(id, model);
+        }
     }
 }

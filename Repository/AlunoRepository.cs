@@ -46,5 +46,19 @@ namespace Repository
             this.Context.Alunos.Remove(aluno);
             this.Context.SaveChanges();
         }
+
+        public void Update(Guid id, Aluno aluno)
+        {
+            var alunoOld = Context.Alunos.FirstOrDefault(x => x.Id == id);
+            
+            alunoOld.DataNascimento = aluno.DataNascimento;
+            alunoOld.Email = aluno.Email;
+            alunoOld.Matricula = aluno.Matricula;
+            alunoOld.Status = aluno.Status;
+            alunoOld.Nome = aluno.Nome;
+            
+            Context.Alunos.Update(alunoOld);
+            this.Context.SaveChanges();
+        }
     }
 }

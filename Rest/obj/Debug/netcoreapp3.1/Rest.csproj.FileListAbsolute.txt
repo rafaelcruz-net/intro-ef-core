@@ -61,3 +61,6 @@ C:\Projetos\Desenvolvimento_Web_Mvc\Camadas_Sample\CamadaSample\Rest\bin\Debug\n
 C:\Projetos\Desenvolvimento_Web_Mvc\Camadas_Sample\CamadaSample\Rest\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Projetos\Desenvolvimento_Web_Mvc\Camadas_Sample\CamadaSample\Rest\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Projetos\Desenvolvimento_Web_Mvc\Camadas_Sample\CamadaSample\Rest\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Projetos\Desenvolvimento_Web_Mvc\Camadas_Sample\CamadaSample\Rest\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Configuration.dll
+C:\Projetos\Desenvolvimento_Web_Mvc\Camadas_Sample\CamadaSample\Rest\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Console.dll
+C:\Projetos\Desenvolvimento_Web_Mvc\Camadas_Sample\CamadaSample\Rest\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.ConfigurationExtensions.dll

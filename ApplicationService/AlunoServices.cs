@@ -52,5 +52,11 @@ namespace ApplicationService
         {
             Repository.Delete(id);
         }
+
+        public void Update(Guid id, Aluno aluno)
+        {
+            Repository.Update(id, aluno);
+        }
+
     }
 }
