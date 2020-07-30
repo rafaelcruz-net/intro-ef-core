@@ -35,6 +35,7 @@ namespace Rest
             services.AddDbContext<InfnetContext>(opt =>
             {
                 opt.UseSqlServer(Configuration.GetConnectionString("InfnetDatabase"));
+                
             });
 
             services.AddControllers();

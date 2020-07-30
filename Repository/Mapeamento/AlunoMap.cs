@@ -21,6 +21,7 @@ namespace Repository.Mapeamento
             builder.Property(x => x.Email).HasMaxLength(50);
             builder.Property(x => x.Status);
             builder.Property(x => x.DataNascimento);
+            builder.Property(x => x.CPF).HasMaxLength(11);
         }
     }
 }

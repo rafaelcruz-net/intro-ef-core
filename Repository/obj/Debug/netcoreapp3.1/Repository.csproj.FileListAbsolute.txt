@@ -10,3 +10,6 @@ C:\Projetos\Desenvolvimento_Web_Mvc\Camadas_Sample\CamadaSample\Repository\obj\D
 C:\Projetos\Desenvolvimento_Web_Mvc\Camadas_Sample\CamadaSample\Repository\obj\Debug\netcoreapp3.1\Repository.dll
 C:\Projetos\Desenvolvimento_Web_Mvc\Camadas_Sample\CamadaSample\Repository\obj\Debug\netcoreapp3.1\Repository.pdb
 C:\Projetos\Desenvolvimento_Web_Mvc\Camadas_Sample\CamadaSample\Repository\obj\Debug\netcoreapp3.1\Repository.csproj.CoreCompileInputs.cache
+C:\Projetos\Desenvolvimento_Web_Mvc\Camadas_Sample\CamadaSample\Repository\bin\Debug\netcoreapp3.1\Repository.runtimeconfig.json
+C:\Projetos\Desenvolvimento_Web_Mvc\Camadas_Sample\CamadaSample\Repository\bin\Debug\netcoreapp3.1\Repository.runtimeconfig.dev.json
+C:\Projetos\Desenvolvimento_Web_Mvc\Camadas_Sample\CamadaSample\Repository\obj\Debug\netcoreapp3.1\Repository.genruntimeconfig.cache

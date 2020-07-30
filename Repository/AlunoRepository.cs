@@ -56,7 +56,8 @@ namespace Repository
             alunoOld.Matricula = aluno.Matricula;
             alunoOld.Status = aluno.Status;
             alunoOld.Nome = aluno.Nome;
-            
+            alunoOld.CPF = aluno.CPF;
+
             Context.Alunos.Update(alunoOld);
             this.Context.SaveChanges();
         }

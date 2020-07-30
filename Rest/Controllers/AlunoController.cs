@@ -22,7 +22,6 @@ namespace Rest.Controllers
             this.Services = services;
         }
 
-
         [HttpGet]
         public IEnumerable<Aluno> Get()
         {
@@ -48,7 +47,6 @@ namespace Rest.Controllers
             }
 
         }
-
 
         [HttpDelete("{id}")]
         public void Delete(Guid id)
