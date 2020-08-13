@@ -40,6 +40,12 @@ namespace Web.Controllers
             return View();
         }
 
+        public ActionResult Edit(Guid id)
+        {
+            var aluno = this.Services.GetAlunoById(id);
+            return View(aluno);
+        }
+
         // POST: AlunoController/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
@@ -47,6 +53,8 @@ namespace Web.Controllers
         {
             try
             {
+                if (ModelState.IsValid == false)
+                    return View(aluno);
 
                 this.Services.Save(aluno);
 
@@ -82,5 +90,8 @@ namespace Web.Controllers
                 return View();
             }
         }
+
+
+
     }
 }
