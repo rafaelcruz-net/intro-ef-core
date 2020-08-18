@@ -7,6 +7,7 @@ using Domain;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
+using Newtonsoft.Json;
 using Repository;
 
 namespace Web.Controllers
@@ -21,12 +22,14 @@ namespace Web.Controllers
         }
 
         // GET: AlunoController
-        public ActionResult Index(string ids = "")
+        public ActionResult Index()
         {
-            if (!String.IsNullOrWhiteSpace(ids))
+            if (this.HttpContext.Session.GetString("AlunosSelecionados") != null)
             {
-                ViewBag.IdsSelecionados = ids.Split(",");
+                var idsSelecionados = JsonConvert.DeserializeObject<List<Aluno>>(this.HttpContext.Session.GetString("AlunosSelecionados"));
+                ViewBag.IdsSelecionados = idsSelecionados.Select(x => x.Id.ToString());
             }
+                    
 
             return View(this.Services.GetAll());
         }
@@ -35,6 +38,8 @@ namespace Web.Controllers
         {
             List<Aluno> alunosSelecionados = new List<Aluno>();
 
+            this.HttpContext.Session.Clear();
+
             if (!String.IsNullOrWhiteSpace(ids))
             {
                 foreach (var item in ids.Split(","))
@@ -42,6 +47,8 @@ namespace Web.Controllers
                     alunosSelecionados.Add(this.Services.GetAlunoById(new Guid(item)));
                 }
             }
+
+            this.HttpContext.Session.SetString("AlunosSelecionados", JsonConvert.SerializeObject(alunosSelecionados));
 
             return View(alunosSelecionados);
         }

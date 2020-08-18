@@ -34,6 +34,9 @@ namespace Web
             {
                 opt.UseSqlServer(Configuration.GetConnectionString("InfnetDatabase"));
             });
+
+            services.AddSession();
+
             services.AddControllersWithViews();
         }
 
@@ -54,6 +57,8 @@ namespace Web
             app.UseStaticFiles();
 
             app.UseRouting();
+
+            app.UseSession();
 
             app.UseAuthorization();
 

@@ -5,21 +5,6 @@
 }
 
 @section Scripts {
-    <script>
-        
-        $(document).ready(function () {
-
-            var ids = [];
-
-            $("input[type='hidden']").each(function (i, e) {
-                ids.push($(e).val());
-            })
-
-            $("#lnkNavAlunos").click(function () {
-                location.href = "/Aluno/Index?ids=" + ids.join(",");
-            });
-        });
-    </script>
 
 }
 
@@ -27,7 +12,7 @@
 
 <p>
     <a asp-action="Create">Create New</a>
-    <a href="#" id="lnkNavAlunos" >VER LISTAGEM DE ALUNOS COMPLETOS</a>
+    <a href="/Aluno/Index" id="lnkNavAlunos" >VER LISTAGEM DE ALUNOS COMPLETOS</a>
 </p>
 <table class="table">
     <thead>
@@ -54,7 +39,6 @@
 @foreach (var item in Model) {
         <tr>
             <td>
-                <input type="hidden" value="@item.Id.ToString()" />
                 @Html.DisplayFor(modelItem => item.Nome)
             </td>
             <td>
