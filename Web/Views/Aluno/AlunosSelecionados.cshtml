@@ -6,33 +6,18 @@
 
 @section Scripts {
     <script>
-        var ids = [];
+        
         $(document).ready(function () {
 
-            $("input[type='checkbox']").each(function (i, e) {
-                if ($(e).is(":checked")) {
-                    ids.push($(this).attr("id"));
-                }
+            var ids = [];
+
+            $("input[type='hidden']").each(function (i, e) {
+                ids.push($(e).val());
+            })
+
+            $("#lnkNavAlunos").click(function () {
+                location.href = "/Aluno/Index?ids=" + ids.join(",");
             });
-
-
-            $("input[type='checkbox']").bind("click", function () {
-                if ($(this).is(":checked")) {
-                    ids.push($(this).attr("id"));
-                } else {
-                    var id = $(this).attr("id");
-
-                    ids = ids.filter(function (elem) {
-                        return elem != id;
-                    });
-                }
-            });
-
-            $("#lnkNavAmigos").click(function () {
-                location.href = "/Aluno/AlunosSelecionados?ids=" + ids.join(",");
-            });
-
-
         });
     </script>
 
@@ -42,12 +27,11 @@
 
 <p>
     <a asp-action="Create">Create New</a>
-    <a href="#" id="lnkNavAmigos" >VER MAIS AMIGOS</a>
+    <a href="#" id="lnkNavAlunos" >VER LISTAGEM DE ALUNOS COMPLETOS</a>
 </p>
 <table class="table">
     <thead>
         <tr>
-            <th></th>
             <th>
                 @Html.DisplayNameFor(model => model.Nome)
             </th>
@@ -70,34 +54,7 @@
 @foreach (var item in Model) {
         <tr>
             <td>
-
-                @{
-                    var marcarCheckbox = false;
-
-                    if (ViewBag.IdsSelecionados != null)
-                    {
-                        foreach (var id in ViewBag.IdsSelecionados)
-                        {
-                            if (item.Id.ToString() == id)
-                            {
-                                marcarCheckbox = true;
-                            }
-
-                        }
-                    }
-
-                }
-
-                @if (marcarCheckbox)
-                {
-                    <input type="checkbox" id="@item.Id" checked />
-                }
-                else
-                {
-                    <input type="checkbox" id="@item.Id" />
-                }
-            </td>
-            <td>
+                <input type="hidden" value="@item.Id.ToString()" />
                 @Html.DisplayFor(modelItem => item.Nome)
             </td>
             <td>

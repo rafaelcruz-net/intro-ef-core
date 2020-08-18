@@ -158,3 +158,4 @@ C:\Projetos\Desenvolvimento_Web_Mvc\Camadas_Sample\CamadaSample\Web\bin\Debug\ne
 C:\Projetos\Desenvolvimento_Web_Mvc\Camadas_Sample\CamadaSample\Web\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Console.dll
 C:\Projetos\Desenvolvimento_Web_Mvc\Camadas_Sample\CamadaSample\Web\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.ConfigurationExtensions.dll
 C:\Projetos\Desenvolvimento_Web_Mvc\Camadas_Sample\CamadaSample\Web\obj\Debug\netcoreapp3.1\Razor\Views\Aluno\Edit.cshtml.g.cs
+C:\Projetos\Desenvolvimento_Web_Mvc\Camadas_Sample\CamadaSample\Web\obj\Debug\netcoreapp3.1\Razor\Views\Aluno\AlunosSelecionados.cshtml.g.cs

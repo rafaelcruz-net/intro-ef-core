@@ -21,9 +21,29 @@ namespace Web.Controllers
         }
 
         // GET: AlunoController
-        public ActionResult Index()
+        public ActionResult Index(string ids = "")
         {
+            if (!String.IsNullOrWhiteSpace(ids))
+            {
+                ViewBag.IdsSelecionados = ids.Split(",");
+            }
+
             return View(this.Services.GetAll());
+        }
+
+        public ActionResult AlunosSelecionados(string ids)
+        {
+            List<Aluno> alunosSelecionados = new List<Aluno>();
+
+            if (!String.IsNullOrWhiteSpace(ids))
+            {
+                foreach (var item in ids.Split(","))
+                {
+                    alunosSelecionados.Add(this.Services.GetAlunoById(new Guid(item)));
+                }
+            }
+
+            return View(alunosSelecionados);
         }
 
         // GET: AlunoController/Details/5
