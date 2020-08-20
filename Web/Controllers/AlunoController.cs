@@ -1,6 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Net;
+using System.Net.WebSockets;
 using System.Threading.Tasks;
 using ApplicationService;
 using Domain;
@@ -9,6 +12,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
 using Newtonsoft.Json;
 using Repository;
+using RestSharp;
 
 namespace Web.Controllers
 {
@@ -29,9 +33,14 @@ namespace Web.Controllers
                 var idsSelecionados = JsonConvert.DeserializeObject<List<Aluno>>(this.HttpContext.Session.GetString("AlunosSelecionados"));
                 ViewBag.IdsSelecionados = idsSelecionados.Select(x => x.Id.ToString());
             }
-                    
 
-            return View(this.Services.GetAll());
+            var client = new RestClient();
+            
+            var request = new RestRequest("https://localhost:5001/api/aluno", DataFormat.Json);
+            var response = client.Get<List<Aluno>>(request);
+
+            return View(response.Data);
+
         }
 
         public ActionResult AlunosSelecionados(string ids)
@@ -83,7 +92,12 @@ namespace Web.Controllers
                 if (ModelState.IsValid == false)
                     return View(aluno);
 
-                this.Services.Save(aluno);
+
+                var client = new RestClient();
+                var request = new RestRequest("https://localhost:5001/api/aluno", DataFormat.Json);
+                request.AddJsonBody(aluno);
+             
+                var response = client.Post<Aluno>(request);
 
                 return RedirectToAction(nameof(Index));
             }
