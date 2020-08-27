@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Domain.Validation;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -19,6 +20,7 @@ namespace Domain
         public String Matricula { get; set; }
 
         [Required(ErrorMessage = "Campo Data de Nascimento é obrigatório")]
+        [MaiorIdadeValidation(ErrorMessage = "O aluno deve ser maior que 18 anos para completar o cadastro")]
         public DateTime DataNascimento { get; set; }
 
         [StringLength(50, ErrorMessage = "Campo Email deve ter no máximo 50 caracteres")]
