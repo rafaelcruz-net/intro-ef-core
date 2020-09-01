@@ -11,6 +11,7 @@
 <div class="row">
     <div class="col-md-4">
         <form asp-action="Create">
+            @Html.AntiForgeryToken();
             <div asp-validation-summary="All" class="invalid"></div>
             <div class="form-group">
                 <label asp-for="Nome" class="control-label"></label>
@@ -24,7 +25,7 @@
             </div>
             <div class="form-group">
                 <label asp-for="DataNascimento" class="control-label"></label>
-                <input asp-for="DataNascimento" class="form-control" type="date" />
+                <input asp-for="DataNascimento" class="form-control date" type="text"  />
                 <span asp-validation-for="DataNascimento" class="invalid"></span>
             </div>
             <div class="form-group">
@@ -35,7 +36,7 @@
             
             <div class="form-group">
                 <label asp-for="CPF" class="control-label"></label>
-                <input asp-for="CPF" class="form-control" />
+                <input asp-for="CPF" class="form-control cpf" />
                 <span asp-validation-for="CPF" class="invalid"></span>
             </div>
             <div class="form-group">

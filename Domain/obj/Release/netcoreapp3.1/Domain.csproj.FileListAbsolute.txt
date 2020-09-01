@@ -1,0 +1,9 @@
+C:\Projetos\Desenvolvimento_Web_Mvc\Camadas_Sample\CamadaSample\Domain\bin\Release\netcoreapp3.1\Domain.deps.json
+C:\Projetos\Desenvolvimento_Web_Mvc\Camadas_Sample\CamadaSample\Domain\bin\Release\netcoreapp3.1\Domain.dll
+C:\Projetos\Desenvolvimento_Web_Mvc\Camadas_Sample\CamadaSample\Domain\bin\Release\netcoreapp3.1\Domain.pdb
+C:\Projetos\Desenvolvimento_Web_Mvc\Camadas_Sample\CamadaSample\Domain\obj\Release\netcoreapp3.1\Domain.csprojAssemblyReference.cache
+C:\Projetos\Desenvolvimento_Web_Mvc\Camadas_Sample\CamadaSample\Domain\obj\Release\netcoreapp3.1\Domain.AssemblyInfoInputs.cache
+C:\Projetos\Desenvolvimento_Web_Mvc\Camadas_Sample\CamadaSample\Domain\obj\Release\netcoreapp3.1\Domain.AssemblyInfo.cs
+C:\Projetos\Desenvolvimento_Web_Mvc\Camadas_Sample\CamadaSample\Domain\obj\Release\netcoreapp3.1\Domain.csproj.CoreCompileInputs.cache
+C:\Projetos\Desenvolvimento_Web_Mvc\Camadas_Sample\CamadaSample\Domain\obj\Release\netcoreapp3.1\Domain.dll
+C:\Projetos\Desenvolvimento_Web_Mvc\Camadas_Sample\CamadaSample\Domain\obj\Release\netcoreapp3.1\Domain.pdb

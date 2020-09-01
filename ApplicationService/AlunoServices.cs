@@ -33,7 +33,7 @@ namespace ApplicationService
 
             var anoAtual = DateTime.Now.Date.Year;
 
-            if ((anoAtual - aluno.DataNascimento.Date.Year) < 21)
+            if ((anoAtual - Convert.ToDateTime(aluno.DataNascimento).Date.Year) < 21)
             {
                 throw new Exception("Para cadastrar um novo aluno ele deve no minimo 21 anos");
             }

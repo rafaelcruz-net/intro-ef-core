@@ -31,6 +31,7 @@ namespace Domain
         [StringLength(14, ErrorMessage = "Campo CPF deve ter no máximo 11 caracteres")]
         [Required(ErrorMessage = "Campo CPF é obrigatório")]
         [RegularExpression(@"\d{3}.\d{3}.\d{3}-\d{2}", ErrorMessage = "CPF não está em um formato correto")]
+        [CpfValidation(ErrorMessage = "Cpf Inválido")]
         public String CPF { get; set; }
 
         public Status Status { get; set; }

@@ -65,3 +65,4 @@ C:\Projetos\Desenvolvimento_Web_Mvc\Camadas_Sample\CamadaSample\Rest\bin\Debug\n
 C:\Projetos\Desenvolvimento_Web_Mvc\Camadas_Sample\CamadaSample\Rest\obj\Debug\netcoreapp3.1\Rest.csproj.CoreCompileInputs.cache
 C:\Projetos\Desenvolvimento_Web_Mvc\Camadas_Sample\CamadaSample\Rest\obj\Debug\netcoreapp3.1\Rest.MvcApplicationPartsAssemblyInfo.cache
 C:\Projetos\Desenvolvimento_Web_Mvc\Camadas_Sample\CamadaSample\Rest\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+C:\Projetos\Desenvolvimento_Web_Mvc\Camadas_Sample\CamadaSample\Rest\obj\Debug\netcoreapp3.1\Rest.MvcApplicationPartsAssemblyInfo.cs
