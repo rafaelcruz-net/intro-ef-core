@@ -34,9 +34,23 @@ namespace Web.Controllers
                 ViewBag.IdsSelecionados = idsSelecionados.Select(x => x.Id.ToString());
             }
 
-            var client = new RestClient();
             
+            var client = new RestClient();
+
+            var requestToken = new RestRequest("https://localhost:5001/api/authenticate/token");
+            requestToken.AddJsonBody(JsonConvert.SerializeObject(new
+            {
+                Email = "joao.silva@al.infnet.edu.br",
+                Password = "123456"
+
+            }));
+
+            var token = client.Post<String>(requestToken);
+
+
             var request = new RestRequest("https://localhost:5001/api/aluno", DataFormat.Json);
+            request.AddHeader("Authorization", "Bearer " + token);
+
             var response = client.Get<List<Aluno>>(request);
 
             return View(response.Data);

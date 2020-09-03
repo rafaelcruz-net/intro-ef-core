@@ -62,7 +62,15 @@ C:\Projetos\Desenvolvimento_Web_Mvc\Camadas_Sample\CamadaSample\Rest\bin\Debug\n
 C:\Projetos\Desenvolvimento_Web_Mvc\Camadas_Sample\CamadaSample\Rest\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Configuration.dll
 C:\Projetos\Desenvolvimento_Web_Mvc\Camadas_Sample\CamadaSample\Rest\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Console.dll
 C:\Projetos\Desenvolvimento_Web_Mvc\Camadas_Sample\CamadaSample\Rest\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.ConfigurationExtensions.dll
-C:\Projetos\Desenvolvimento_Web_Mvc\Camadas_Sample\CamadaSample\Rest\obj\Debug\netcoreapp3.1\Rest.csproj.CoreCompileInputs.cache
-C:\Projetos\Desenvolvimento_Web_Mvc\Camadas_Sample\CamadaSample\Rest\obj\Debug\netcoreapp3.1\Rest.MvcApplicationPartsAssemblyInfo.cache
 C:\Projetos\Desenvolvimento_Web_Mvc\Camadas_Sample\CamadaSample\Rest\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+C:\Projetos\Desenvolvimento_Web_Mvc\Camadas_Sample\CamadaSample\Rest\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Projetos\Desenvolvimento_Web_Mvc\Camadas_Sample\CamadaSample\Rest\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+C:\Projetos\Desenvolvimento_Web_Mvc\Camadas_Sample\CamadaSample\Rest\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+C:\Projetos\Desenvolvimento_Web_Mvc\Camadas_Sample\CamadaSample\Rest\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+C:\Projetos\Desenvolvimento_Web_Mvc\Camadas_Sample\CamadaSample\Rest\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Projetos\Desenvolvimento_Web_Mvc\Camadas_Sample\CamadaSample\Rest\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+C:\Projetos\Desenvolvimento_Web_Mvc\Camadas_Sample\CamadaSample\Rest\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Projetos\Desenvolvimento_Web_Mvc\Camadas_Sample\CamadaSample\Rest\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Projetos\Desenvolvimento_Web_Mvc\Camadas_Sample\CamadaSample\Rest\obj\Debug\netcoreapp3.1\Rest.csproj.CoreCompileInputs.cache
 C:\Projetos\Desenvolvimento_Web_Mvc\Camadas_Sample\CamadaSample\Rest\obj\Debug\netcoreapp3.1\Rest.MvcApplicationPartsAssemblyInfo.cs
+C:\Projetos\Desenvolvimento_Web_Mvc\Camadas_Sample\CamadaSample\Rest\obj\Debug\netcoreapp3.1\Rest.MvcApplicationPartsAssemblyInfo.cache
