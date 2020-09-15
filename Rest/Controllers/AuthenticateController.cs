@@ -28,7 +28,7 @@ namespace Rest.Controllers
             if (!ModelState.IsValid)
                 return await Task.FromResult(BadRequest(ModelState));
 
-            var token = this.AuthenticateService.AuthenticateUser(loginRequest.Email, loginRequest.Password);
+            var token = this.AuthenticateService.AuthenticateUser(loginRequest.Email, loginRequest.cpf);
 
             if (String.IsNullOrWhiteSpace(token))
             {

@@ -12,8 +12,8 @@ namespace Rest.ViewModel
         [EmailAddress(ErrorMessage = "Email não está em um formato correto")]
         public string Email { get; set; }
 
-        [Required(ErrorMessage = "Password é um campo obrigátorio")]
-        public string Password { get; set; }
+        [Required(ErrorMessage = "cpf é um campo obrigátorio")]
+        public string cpf { get; set; }
 
     }
 }

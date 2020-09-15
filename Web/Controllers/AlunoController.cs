@@ -11,6 +11,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
 using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 using Repository;
 using RestSharp;
 
@@ -38,18 +39,20 @@ namespace Web.Controllers
             var client = new RestClient();
 
             var requestToken = new RestRequest("https://localhost:5001/api/authenticate/token");
+            
             requestToken.AddJsonBody(JsonConvert.SerializeObject(new
             {
-                Email = "joao.silva@al.infnet.edu.br",
-                Password = "123456"
-
+                Email = "maria.silva2@al.infnet.edu.br",
+                Cpf = "999.999.999-99"
             }));
 
-            var token = client.Post<String>(requestToken);
 
+            var result = client.Post<TokenResult>(requestToken).Data;
+
+            this.HttpContext.Session.SetString("Token", result.Token);
 
             var request = new RestRequest("https://localhost:5001/api/aluno", DataFormat.Json);
-            request.AddHeader("Authorization", "Bearer " + token);
+            request.AddHeader("Authorization", "Bearer " + this.HttpContext.Session.GetString("Token"));
 
             var response = client.Get<List<Aluno>>(request);
 
@@ -79,9 +82,13 @@ namespace Web.Controllers
         // GET: AlunoController/Details/5
         public ActionResult Details(Guid id)
         {
-            var aluno = this.Services.GetAlunoById(id);
+            var client = new RestClient();
+            var request = new RestRequest("https://localhost:5001/api/aluno/" + id, DataFormat.Json);
+            request.AddHeader("Authorization", "Bearer " + this.HttpContext.Session.GetString("Token"));
 
-            return View(aluno);
+            var response = client.Get<Aluno>(request);
+
+            return View(response.Data);
         }
 
         // GET: AlunoController/Create
@@ -145,8 +152,10 @@ namespace Web.Controllers
                 return View();
             }
         }
+    }
 
-
-
+    public class TokenResult
+    {
+        public String Token { get; set; }
     }
 }

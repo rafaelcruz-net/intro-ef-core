@@ -23,14 +23,14 @@ namespace ApplicationService
             this.Configuration = configuration;
         }
 
-        public string AuthenticateUser(string email, string password)
+        public string AuthenticateUser(string email, string cpf)
         {
             var aluno = this.Repository.GetAlunoByEmail(email);
 
             if (aluno == null)
                 return null;
 
-            if (password != "123456")
+            if (aluno.CPF != cpf)
                 return null;
 
             return CreateToken(aluno);
@@ -45,6 +45,7 @@ namespace ApplicationService
             claims.Add(new Claim(JwtRegisteredClaimNames.Sub, aluno.Id.ToString()));
             claims.Add(new Claim(ClaimTypes.Name, aluno.Nome));
             claims.Add(new Claim(ClaimTypes.Email, aluno.Email));
+            claims.Add(new Claim("cpf", aluno.CPF));
 
             var tokenHandler = new JwtSecurityTokenHandler();
 

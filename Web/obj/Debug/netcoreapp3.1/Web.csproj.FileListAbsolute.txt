@@ -161,3 +161,7 @@ C:\Projetos\Desenvolvimento_Web_Mvc\Camadas_Sample\CamadaSample\Web\bin\Debug\ne
 C:\Projetos\Desenvolvimento_Web_Mvc\Camadas_Sample\CamadaSample\Web\obj\Debug\netcoreapp3.1\Web.csproj.CoreCompileInputs.cache
 C:\Projetos\Desenvolvimento_Web_Mvc\Camadas_Sample\CamadaSample\Web\obj\Debug\netcoreapp3.1\Web.MvcApplicationPartsAssemblyInfo.cache
 C:\Projetos\Desenvolvimento_Web_Mvc\Camadas_Sample\CamadaSample\Web\obj\Debug\netcoreapp3.1\Web.MvcApplicationPartsAssemblyInfo.cs
+C:\Projetos\Desenvolvimento_Web_Mvc\Camadas_Sample\CamadaSample\Web\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Projetos\Desenvolvimento_Web_Mvc\Camadas_Sample\CamadaSample\Web\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+C:\Projetos\Desenvolvimento_Web_Mvc\Camadas_Sample\CamadaSample\Web\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+C:\Projetos\Desenvolvimento_Web_Mvc\Camadas_Sample\CamadaSample\Web\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
